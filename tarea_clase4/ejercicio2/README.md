@@ -574,6 +574,22 @@ Cuando cualquiera de las dos primeras tareas termina, el siguiente proceso obtie
 
 Esto permite mantener la concurrencia del procesamiento sin sobrecargar la base de datos.
 
+# Ejecución del DAG
+
+La siguiente captura muestra la ejecución de los cinco procesos del DAG:
+
+![Ejecución del DAG](images/dag-run.png)
+
+Se puede observar la ejecución de los procesos prioritarios y normales definidos en el escenario.
+
+## Protección del recurso compartido mediante Pool
+
+La siguiente captura muestra el Pool `bd_operacional` configurado con 2 slots:
+
+![Pool bd_operacional](images/pool-bd-operacional.png)
+
+El Pool permite controlar la cantidad de tareas que pueden utilizar simultáneamente la base de datos operacional. Durante la ejecución, las tareas deben esperar a que exista un slot disponible cuando los dos slots están ocupados.
+
 ---
 
 # 13. ¿Por qué no utilizar solamente Queue?
