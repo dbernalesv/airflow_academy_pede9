@@ -1,4 +1,0 @@
-services:
-  airflow-worker:
-    environment:
-      AIRFLOW__CELERY__WORKER_CONCURRENCY: 1
