@@ -578,7 +578,7 @@ Esto permite mantener la concurrencia del procesamiento sin sobrecargar la base 
 
 La siguiente captura muestra la ejecución de los cinco procesos del DAG:
 
-![Ejecución del DAG](images/dag-run.png)
+![Ejecución del DAG](dag-run.png)
 
 Se puede observar la ejecución de los procesos prioritarios y normales definidos en el escenario.
 
@@ -586,7 +586,7 @@ Se puede observar la ejecución de los procesos prioritarios y normales definido
 
 La siguiente captura muestra el Pool `bd_operacional` configurado con 2 slots:
 
-![Pool bd_operacional](images/pool-bd-operacional.png)
+![Pool bd_operacional](pool-bd-operacional.png)
 
 El Pool permite controlar la cantidad de tareas que pueden utilizar simultáneamente la base de datos operacional. Durante la ejecución, las tareas deben esperar a que exista un slot disponible cuando los dos slots están ocupados.
 
