@@ -656,7 +656,7 @@ El valor de `worker_concurrency` está relacionado con la capacidad de procesami
 ### Levantar los servicios
 
 ```bash
-docker compose up -d
+docker compose -f docker-compose.yml -f docker-compose.override.yml up -d
 ```
 
 ### Detener los servicios
